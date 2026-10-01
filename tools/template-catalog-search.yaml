@@ -1,0 +1,16 @@
+name: "template-catalog-search"
+description: "Searches the 100+ curated LLM app catalog by category, modality, model provider, or framework."
+input_schema:
+  type: "object"
+  properties:
+    query:
+      type: "string"
+      description: "Search keyword, domain, or agent use case description."
+    category:
+      type: "string"
+      description: "App category such as voice_ai_agents, advanced_ai_agents, rag_apps, or agent_skills."
+    model_provider:
+      type: "string"
+      description: "Target LLM provider (e.g. anthropic, openai, google, ollama)."
+  required:
+    - "query"

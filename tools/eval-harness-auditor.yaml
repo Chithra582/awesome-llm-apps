@@ -1,0 +1,13 @@
+name: "eval-harness-auditor"
+description: "Inspects test coverage, benchmark datasets, and eval criteria for production agent applications."
+input_schema:
+  type: "object"
+  properties:
+    app_path:
+      type: "string"
+      description: "Relative directory path of the LLM application to audit."
+    eval_framework:
+      type: "string"
+      description: "Evaluation harness type e.g. deepeval, ragas, or custom_assertions."
+  required:
+    - "app_path"

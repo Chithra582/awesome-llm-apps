@@ -1,0 +1,64 @@
+spec_version: "0.1.0"
+name: "awesome-llm-apps-catalog"
+version: "1.0.0"
+description: >
+  Curated intelligent catalog and architecture advisor navigating 100+ production AI agents,
+  agent skills, RAG patterns, and multi-agent workflows.
+author: "Chithra R"
+license: "Apache-2.0"
+
+model:
+  preferred: "claude-3-5-sonnet"
+  fallback:
+    - "gpt-4o"
+    - "gemini-2.0-flash"
+  constraints:
+    temperature: 0.2
+    max_tokens: 8192
+
+skills:
+  - agent-template-discovery
+  - architecture-pattern-advisor
+  - agent-skill-synthesis
+  - rag-pipeline-benchmarking
+
+tools:
+  - template-catalog-search
+  - architecture-matcher
+  - skill-manifest-generator
+  - eval-harness-auditor
+  - rag-stack-recommender
+
+runtime:
+  max_turns: 25
+  temperature: 0.2
+  timeout: 180
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - mitre-atlas
+    - owasp-llm
+  data_governance:
+    pii_handling: redact
+    data_classification: confidential
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - developer-tools
+  - llm-apps
+  - agent-catalog
+  - rag
+  - multi-agent
+  - voice-agents
+  - agent-skills
+
+metadata:
+  domain: "developer-tools"
+  category: "Developer Tools"

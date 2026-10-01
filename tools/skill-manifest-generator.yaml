@@ -1,0 +1,19 @@
+name: "skill-manifest-generator"
+description: "Generates standardized OpenGAP SKILL.md and tool schemas for newly decoupled agent capabilities."
+input_schema:
+  type: "object"
+  properties:
+    skill_name:
+      type: "string"
+      description: "Kebab-case identifier for the agent skill."
+    capability_summary:
+      type: "string"
+      description: "Concise description of the skill capability under 150 characters."
+    dependencies:
+      type: "array"
+      items:
+        type: "string"
+      description: "List of required Python or external package dependencies."
+  required:
+    - "skill_name"
+    - "capability_summary"

@@ -1,0 +1,16 @@
+name: "architecture-matcher"
+description: "Evaluates project constraints to match and recommend the optimal agent topology and framework."
+input_schema:
+  type: "object"
+  properties:
+    task_complexity:
+      type: "string"
+      description: "Complexity tier: single_turn, multi_step_sequential, hierarchical_team, or real_time_duplex."
+    latency_requirement_ms:
+      type: "integer"
+      description: "Target end-to-end response latency threshold in milliseconds."
+    multi_modal:
+      type: "boolean"
+      description: "Whether the workflow involves voice, video, or image processing."
+  required:
+    - "task_complexity"

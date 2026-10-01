@@ -1,0 +1,17 @@
+name: "rag-stack-recommender"
+description: "Recommends vector databases, embedding models, and retrieval strategies based on document scale."
+input_schema:
+  type: "object"
+  properties:
+    document_volume_mb:
+      type: "integer"
+      description: "Estimated total corpus volume in megabytes."
+    query_pattern:
+      type: "string"
+      description: "Predominant query type: semantic_search, exact_keyword, or hybrid_rerank."
+    target_budget_tier:
+      type: "string"
+      description: "Cost tier: open_source_local, managed_cloud, or enterprise_sla."
+  required:
+    - "document_volume_mb"
+    - "query_pattern"
