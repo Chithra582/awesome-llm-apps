@@ -1,6 +1,6 @@
 spec_version: "0.1.0"
-name: "awesome-llm-apps-catalog"
-version: "1.0.0"
+name: awesome-llm-apps
+version: 1.0.0
 description: >
   Curated intelligent catalog and architecture advisor navigating 100+ production AI agents,
   agent skills, RAG patterns, and multi-agent workflows.
@@ -60,5 +60,5 @@ tags:
   - agent-skills
 
 metadata:
-  domain: "developer-tools"
-  category: "Developer Tools"
+  domain: Developer Tools / Production LLM Applications & Agent Architectures
+  category: Developer Tools
